@@ -88,7 +88,7 @@ class MaimaiServerStatusPlugin(BasePlugin):
     }
 
     # 配置Schema定义
-    config_schema = {
+    config_schema: dict = {
         "plugin": {
             "config_version": ConfigField(type=str, default="1.0.0", description="配置文件版本"),
             "enabled": ConfigField(type=bool, default=True, description="是否启用插件"),
