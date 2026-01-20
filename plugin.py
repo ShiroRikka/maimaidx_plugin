@@ -12,7 +12,7 @@ from src.plugin_system import (
     register_plugin,
     BaseTool,
     ComponentInfo,
-    ToolParamType,
+    ConfigField,
 )
 
 
@@ -83,15 +83,15 @@ class MaimaiServerStatusPlugin(BasePlugin):
     config_file_name: str = "config.toml"
 
     # 配置节描述
-    config_section_descriptions: dict = {
-        "plugin": "插件基本信息",
+    config_section_descriptions = {
+        "plugin": "插件启用配置",
     }
 
     # 配置Schema定义
-    config_schema: dict = {
+    config_schema = {
         "plugin": {
-            "config_version": {"type": str, "default": "1.0.0", "description": "配置文件版本"},
-            "enabled": {"type": bool, "default": False, "description": "是否启用插件"},
+            "config_version": ConfigField(type=str, default="1.0.0", description="配置文件版本"),
+            "enabled": ConfigField(type=bool, default=True, description="是否启用插件"),
         },
     }
 
