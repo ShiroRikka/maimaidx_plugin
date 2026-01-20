@@ -1,0 +1,26 @@
+{
+  "manifest_version": 1,
+  "name": "MaiBot 舞萌插件",
+  "version": "1.0.0",
+  "description": "提供舞萌DX相关功能的MaiBot插件",
+  "author": {
+    "name": "ShiroRikka"
+  },
+  "license": "MIT",
+  "host_application": {
+    "min_version": "0.12.2"
+  },
+  "homepage_url": "https://github.com/MaiM-with-u/MaiBot",
+  "repository_url": "https://github.com/MaiM-with-u/MaiBot",
+  "keywords": [
+    "maimai",
+    "diving-fish",
+    "server-status",
+    "舞萌"
+  ],
+  "categories": [
+    "Utility Tools"
+  ],
+  "default_locale": "zh-CN",
+  "id": "ShiroRikka.MaiBot"
+}
