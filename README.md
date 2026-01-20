@@ -1,0 +1,1 @@
+# maimaidx_plugin
