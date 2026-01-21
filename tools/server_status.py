@@ -8,7 +8,7 @@ from typing import Any, Dict
 
 from src.plugin_system import BaseTool
 
-from ..apis.diving_fish import check_server_status, format_status_response
+from ..apis.diving_fish import check_server_status
 
 
 class MaimaiServerStatusTool(BaseTool):
@@ -28,7 +28,6 @@ class MaimaiServerStatusTool(BaseTool):
         Returns:
             dict: 包含服务器状态信息的字典
         """
-        result = await check_server_status()
-        content = format_status_response(result)
+        content = await check_server_status()
 
         return {"name": self.name, "content": content}
