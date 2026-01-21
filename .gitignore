@@ -210,4 +210,5 @@ __marimo__/
 # 开发文档
 dev_prompts.*
 develop
+plugin_develop_docs
 config.toml
