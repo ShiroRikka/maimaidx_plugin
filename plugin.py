@@ -17,8 +17,8 @@ from .tools import MaimaiServerStatusTool
 
 
 @register_plugin
-class MaimaiServerStatusPlugin(BasePlugin):
-    """MaiBot 舞萌插件"""
+class MaimaiDXPlugin(BasePlugin):
+    """MaiBot 舞萌DX插件 - 提供舞萌DX相关功能"""
 
     plugin_name: str = "maimaidx_plugin"
     enable_plugin: bool = True
