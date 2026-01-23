@@ -22,10 +22,3 @@ async def check_qrcode_page_server_status() -> str:
 
     except Exception as e:
         return f"⚠️ **舞萌DX玩家二维码网页服务器状态异常**\n连接失败: {str(e)}"
-
-
-if __name__ == "__main__":
-    import asyncio
-
-    status = asyncio.run(check_qrcode_page_server_status())
-    print(status)

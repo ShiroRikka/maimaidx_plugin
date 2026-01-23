@@ -27,10 +27,3 @@ async def check_game_server_status() -> str:
 
     except Exception as e:
         return f"⚠️ **舞萌DX游戏服务器状态异常**\n连接失败: {str(e)}"
-
-
-if __name__ == "__main__":
-    import asyncio
-
-    status = asyncio.run(check_game_server_status())
-    print(status)
