@@ -8,8 +8,7 @@ from typing import Any, Dict
 
 from src.plugin_system import BaseTool
 
-from ..apis.diving_fish import check_game_server_status
-from ..apis.wahlap_page_qrcode import check_qrcode_page_server_status
+from ..apis import check_game_server_status, check_qrcode_page_server_status
 
 
 class MaimaiServerStatusTool(BaseTool):
