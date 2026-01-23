@@ -214,3 +214,4 @@ plugin_develop_docs
 config.toml
 TODO.md
 static
+plugin_system_guide.md
